@@ -22,3 +22,8 @@ When you run the `GetMessages`script, you will be prompted to enter your UDID
 
 After executing the script, you'll end up with two .sqlite files in your directory
 An easy way to consult the contents of the produced `MasterDB.sqlite`-file is using a Firefox add-on called [SQLite Manager](https://code.google.com/p/sqlite-manager) (_currently version 0.8.0_)  
+
+####Additonal info
+* Path to backup file: `/Users/admin/Library/Application Support/MobileSync/Backup/<UDID>`
+* File containing text messages: `3d0d7e5fb2ce288813306e4d4636395e047a3d28`
+* Text messages stored in table `messages`; required from in table `messages`: ROWID, text, handle_id, date, is_from_me
