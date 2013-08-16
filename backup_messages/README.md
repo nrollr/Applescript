@@ -20,7 +20,7 @@ First create a new directory called **/Temp** in your home folder and copy the `
 When you run the `GetMessages`script, you will be prompted to enter your UDID
 > If you don't know your UDID, open iTunes, connect your iPhone, on the **Summary** page click on **Serial Number** and you'll notice it switches to **Identifier (UDID)** automatically. Next right click the UDID number and select **Copy Identifier (UDID)** and paste in the prompt of the `GetMessages`script. 
 
-After executing the script, you'll end up with two .sqlite files in your directory. An easy way to consult the contents of the produced `MasterDB.sqlite`-file is using a Firefox add-on called [SQLite Manager](https://code.google.com/p/sqlite-manager) (_currently version 0.8.0_)  
+After executing the script, you'll end up with two .sqlite files in your directory. An easy way to consult the contents of the produced `MasterDB.sqlite`-file is using a Firefox add-on called [SQLite Manager](https://code.google.com/p/sqlite-manager)  - *currently version 0.8.0*  
 
 ####Additonal info
 * Path to backup file: `/Users/admin/Library/Application Support/MobileSync/Backup/<UDID>`
