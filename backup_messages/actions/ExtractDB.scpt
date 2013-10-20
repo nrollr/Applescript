@@ -15,9 +15,8 @@ on run
 		copy file BackupFile to folder TempFolder
 		
 		set dbCopy to TempFolder & ":" & dbName
-		set dbFile to "MessagesDB.sqlite"
+		set dbFile to "ExtractDB.sqlite"
 		set name of file dbCopy to dbFile
 		
 	end tell
-	
 end run
