@@ -8,7 +8,7 @@ This scripts fetch the name and artist of the song currently playing in iTunes, 
 
 ###How it works
 
-First we fetch the **name** and the **artist** value from iTunes, which are used to compose the tweet in a format: "Now playing : ♫ _`trackName`_ - _`trackArtist`_ ♫ "
+First we fetch the **name** and the **artist** value from iTunes, which are used to compose the tweet in a format: "Now playing : ♫ _`trackName` - `trackArtist`_ ♫ "
 
 If you choose to post it to Twitter using a browser the tweet is appended to an URL `http://twitter.com/intent/tweet?text=` and then passed on to your browser of choice (which still requires you to sign in and hit the tweet button manually). Or you may use the Twitter Scripter agent to post it directly to Twitter, with no further user interaction required.  
 
@@ -17,7 +17,7 @@ If you choose to post it to Twitter using a browser the tweet is appended to an 
 * `Tweet via Safari.applescript` for Safari 
 * `Tweet via Chrome.applescript` for Google Chrome 
   
-The compiled versions can be found in the [scpt files]() directory
+The compiled versions can be found in the [scpt files](https://github.com/nrollr/applescript/tree/master/iTunes_to_twitter/scpt%20files) directory
 
  
 ####Using the Twitter Scripter
@@ -35,7 +35,7 @@ The compiled versions can be found in the [scpt files]() directory
 
 ###Additonal info
 * Script tested on **OSX 10.9** and **iTunes version 11.1.1** 
-* All compiled scripts can be found in the [scpt files]() directory
+* All compiled scripts can be found in the [scpt files](https://github.com/nrollr/applescript/tree/master/iTunes_to_twitter/scpt%20files) directory
 * [Twitter Scripter](itunes.apple.com/us/app/twitter-scripter/id645249778?mt=12) is free agent and can be downloaded from the Mac Apple Store.
 
 
