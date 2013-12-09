@@ -3,7 +3,7 @@
 This script fetches the name and artist of the song currently playing in iTunes, compose a tweet with these values and sends it to Twitter using two methods (depending on the script you choose) : 
 
 1. Passing a formatted URL to the browser of your choice. There are custom scripts for [Safari]() and/or [Chrome]() 
-2. Using the [Twitter Scripter](itunes.apple.com/us/app/twitter-scripter/id645249778?mt=12) an agent that provides simplified access to the Twitter API directly from AppleScript.
+2. Using the [Twitter Scripter](http://itunes.apple.com/us/app/twitter-scripter/id645249778?mt=12) an agent that provides simplified access to the Twitter API directly from AppleScript.
 
 
 ###How it works
@@ -36,7 +36,7 @@ The compiled versions can be found in the [scpt files](https://github.com/nrollr
 ###Additonal info
 * Script tested on **OSX 10.9** and **iTunes version 11.1.1** 
 * All compiled scripts can be found in the [scpt files](https://github.com/nrollr/applescript/tree/master/iTunes_to_twitter/scpt%20files) directory
-* [Twitter Scripter](itunes.apple.com/us/app/twitter-scripter/id645249778?mt=12) is free agent and can be downloaded from the Mac Apple Store.
+* [Twitter Scripter](http://itunes.apple.com/us/app/twitter-scripter/id645249778?mt=12) is free agent and can be downloaded from the Mac Apple Store.
 
 
 
