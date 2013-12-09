@@ -8,7 +8,7 @@ This script fetches the name and artist of the song currently playing in iTunes,
 
 ###How it works
 
-First we fetch the **name** and the **artist** value from iTunes, which are used to compose the tweet in a format: "Now playing : ♫ _`trackName` - `trackArtist`_ ♫ "
+First we fetch the **name** and the **artist** value from iTunes, which are used to compose the tweet in a format: "#NowPlaying : ♫ _`trackName` - `trackArtist`_ ♫ "
 
 If you choose to post it to Twitter using a browser the tweet is appended to an URL `http://twitter.com/intent/tweet?text=` and then passed on to your browser of choice (which still requires you to sign in and hit the tweet button manually). Or you may use the Twitter Scripter agent to post it directly to Twitter, with no further user interaction required.  
 
