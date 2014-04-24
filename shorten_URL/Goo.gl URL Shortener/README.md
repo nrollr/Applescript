@@ -7,7 +7,7 @@ A simple AppleScript requesting any type of URL as input and returns a shortened
 If you are not familiar with the Google URL Shortener service, here is an example:  
 `https://developers.google.com/url-shortener/v1` is shortened to [goo.gl/ll5bAa](http://goo.gl/ll5bAa)  
 
-For more information about the Google URL Shortener API, please read the API documentation on  [developers.google.com](https://developers.google.com/url-shortener/v1/getting_started) . Also note: the use of a (personal) API key or auth token is highly recommended according to the documentation: 
+For more information about the Google URL Shortener API, please read the API documentation on  [developers.google.com](https://developers.google.com/url-shortener/v1/getting_started). Also note: the use of a (personal) API key or auth token is highly recommended according to the documentation: 
 > _"Requests to the Google URL Shortener API for public data must be accompanied by an identifier, which can be an API key or an auth token."_  
      
 The section _"**Acquiring and using an API key**"_ will guide your through this process.
@@ -16,7 +16,7 @@ The section _"**Acquiring and using an API key**"_ will guide your through this 
 ###How it works
 
 As the prompted dialog box requests: _"Enter a long URL"_ and click OK. In the background a shell script requests the **Goo.gl** service to return the shortened version.
-The shortened URL returned by the **Goo.gl** service and copied to the clipboard. The enduser is informed about this via a notification, using the OSX notification center. (see [screenshot](http://cl.ly/T5rA) of the notification)
+The shortened URL returned by the **Goo.gl** service and copied to the clipboard. The enduser is informed about this via a notification, using the OSX notification center. (see [screenshot](http://cl.ly/VBKl) of the notification)
   
 **Note #1:** Since the API documentation recommends to include an identifier, make sure to modify the script to reflect your own personal API key:   
 > In `https://www.googleapis.com/urlshortener/v1/url?key={YOUR_API_KEY}`   
