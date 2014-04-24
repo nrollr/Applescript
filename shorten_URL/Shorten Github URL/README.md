@@ -19,7 +19,7 @@ The actual shortened URL is extracted from the output returned by the **Git.io**
 
 **Note:** the use and integration of the Applescript with OSX notification center is only valid if you are running the script in the latest version of OSX, Mavericks. If you plan on using the script in earlier versions of OSX, you need to remove or change the last line in the script `display notification` 
  
-The compiled version can be found in the [scpt file](https://github.com/nrollr/applescript/tree/master/shorten_URL/scpt%20file) directory
+The compiled version can be found in the [scpt file](https://github.com/nrollr/applescript/tree/master/shorten_URL/Shorten%20Github%20URL/scpt%20file) directory
 
 
 
