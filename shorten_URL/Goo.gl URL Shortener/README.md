@@ -26,7 +26,7 @@ where `YOUR_API_KEY` should be replaced with your actual personal API key provid
  
 The compiled version can be found in the [scpt file](https://github.com/nrollr/applescript/tree/master/shorten_URL/Goo.gl%20URL%20Shortener/scpt%20file) directory
 
-  
+ 
 
 ###Additonal info
 Script was tested on **OSX 10.9.2** and **AppleScript 2.3.1** 
