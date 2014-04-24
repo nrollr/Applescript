@@ -24,7 +24,7 @@ where `YOUR_API_KEY` should be replaced with your actual personal API key provid
 
 **Note #2:** the use and integration of the Applescript with OSX notification center is only valid if you are running the script in the latest version of OSX, Mavericks. If you plan on using the script in earlier versions of OSX, you need to remove or change the last line in the script `display notification` 
  
-The compiled version can be found in the [scpt file](https://github.com/nrollr/applescript/tree/master/shorten_URL/scpt%20file) directory
+The compiled version can be found in the [scpt file](https://github.com/nrollr/applescript/tree/master/shorten_URL/Goo.gl%20URL%20Shortener/scpt%20file) directory
 
   
 
