@@ -1,4 +1,4 @@
--- GetMessages.scpt combines all individual scipts listed in the actions directory
+-- GetMessages.applescript combines all individual scipts listed in the actions directory
 
 -- From AppleScript ExtractDB
 -- Step {1}: Define variables
@@ -41,7 +41,7 @@ do shell script start & handleTbl & quote
 	set targetDB to workingDir & "NewDB.sqlite"
 	set loadCmd to "ATTACH DATABASE '" & targetDB & "' AS target;"
 -- Copy contents of messages table
-	set copyMessages to "INSERT INTO target.message SELECT ROWID,handle_id,service,date,is_from_me,text FROM main.messages ORDER BY date ASC;"
+	set copyMessages to "INSERT INTO target.messages SELECT ROWID,handle_id,service,date,is_from_me,text FROM main.message ORDER BY date ASC;"
 do shell script begin & loadCmd & copyMessages & quote
 -- Copy contents of contacts table
 set copyContacts to "INSERT INTO target.contacts SELECT ROWID,id FROM main.handle;"
@@ -49,3 +49,16 @@ do shell script begin & loadCmd & copyContacts & quote
 
 -- Cleanup rule
 do shell script "cd " & workingDir & "; rm *.sqlite-*"
+
+-- From AppleScript ImportDB
+-- Step{7}: Create a dump of NewDB.sqlite
+do shell script "cd " & workingDir & "; sqlite3 NewDB.sqlite .dump > sqlite_dump.sql"
+
+-- Step{8}: Convert SQLite to MySQL using ConvertDB.py
+-- Make sure the Python script ConvertDB.py exists in /Users/{username}/Temp
+do shell script "cd " & workingDir & "; cat sqlite_dump.sql | python ConvertDB.py > mysql_dump.sql"
+
+-- Step{9}: Import mysql_dump.sql into MySQL
+-- Make sure the "Messages" database exists and change -ppassword to your own
+-- Depending on your MySQL configuration, check and change the path to mysql if necessary
+do shell script "/usr/local/Cellar/mysql/5.6.27/bin/mysql -u root -ppassword Messages < " & workingDir & "mysql_dump.sql"
