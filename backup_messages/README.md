@@ -7,15 +7,16 @@ This script retrieves your text messages from your iPhone backup directory and c
 
 ###GetMessages script
 
-`GetMessages.applescript` compiles three individual actions/scripts located in the [actions](https://github.com/nrollr/applescript/tree/master/backup_messages/actions) directory:
+`GetMessages.applescript` consolidates four individual actions/scripts located in the [actions](https://github.com/nrollr/applescript/tree/master/backup_messages/actions) directory:
  
-* **_ExtractDB.applescript_** : extracts the sqlite file from your iPhone backup and stores it as `MessagesDB.sqlite`
-* **_CreateDB.applescript_** : creates a clean sqlite file called `NewDB.sqlite` and populates the database with table a structure optimized for iOS9 content
-* **_InsertData.applescript_** : only extracts relevant content from `MessagesDB.sqlite` and injects it in `NewDB.sqlite`
+* **ExtractDB**.applescript : extracts the sqlite file from your iPhone backup and stores it as `MessagesDB.sqlite`
+* **CreateDB**.applescript : creates a clean sqlite file called `NewDB.sqlite` and populates the database with table a structure optimized for iOS9 content
+* **InsertData**.applescript : only extracts relevant content from `MessagesDB.sqlite` and injects it in `NewDB.sqlite`
+* **ImportDB**.applescript : converts and imports the .sqlite DB in to a MySQL server
 
 ###Running the script
 
-First create a new directory called **/Temp** in your home folder and copy the `GetMessages`-script into the new directory. Next open Applescript Editor and run it. 
+First create a new directory called **/Temp** in your home folder and copy the `GetMessages`script into the new directory. Next open Applescript Editor and run it. 
 
 When you run the `GetMessages`script, you will be prompted to enter your UDID
 > If you don't know your UDID, open iTunes, connect your iPhone, on the **Summary** page click on **Serial Number** and you'll notice it switches to **Identifier (UDID)** automatically. Next right click the UDID number and select **Copy Identifier (UDID)** and paste in the prompt of the `GetMessages`script. 
