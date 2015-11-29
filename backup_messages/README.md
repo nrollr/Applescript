@@ -15,7 +15,7 @@ This script retrieves your text messages from your iPhone backup directory and c
 
 ###Running the script
 
-First create a new directory called **/Temp** in your home folder and copy the `GetMessages.scpt`-file into the new directory. Next open Applescript Editor and run it. 
+First create a new directory called **/Temp** in your home folder and copy the `GetMessages`-script into the new directory. Next open Applescript Editor and run it. 
 
 When you run the `GetMessages`script, you will be prompted to enter your UDID
 > If you don't know your UDID, open iTunes, connect your iPhone, on the **Summary** page click on **Serial Number** and you'll notice it switches to **Identifier (UDID)** automatically. Next right click the UDID number and select **Copy Identifier (UDID)** and paste in the prompt of the `GetMessages`script. 
