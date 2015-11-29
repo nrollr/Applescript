@@ -7,11 +7,11 @@ This script retrieves your text messages from your iPhone backup directory and c
 
 ###GetMessages script
 
-`GetMessages.scpt` compiles three individual actions/scripts located in the [actions](https://github.com/nrollr/applescript/tree/master/backup_messages/actions) directory:
+`GetMessages.applescript` compiles three individual actions/scripts located in the [actions](https://github.com/nrollr/applescript/tree/master/backup_messages/actions) directory:
  
-* **_ExtractDB.scpt_** : extracts the sqlite file from your iPhone backup and stores it as `MessagesDB.sqlite`
-* **_CreateDB.scpt_** : creates a clean sqlite file called `NewDB.sqlite` and populates the database with table a structure optimized for iOS9 content
-* **_InsertData.scpt_** : only extracts relevant content from `MessagesDB.sqlite` and injects it in `NewDB.sqlite`
+* **_ExtractDB.applescript_** : extracts the sqlite file from your iPhone backup and stores it as `MessagesDB.sqlite`
+* **_CreateDB.applescript_** : creates a clean sqlite file called `NewDB.sqlite` and populates the database with table a structure optimized for iOS9 content
+* **_InsertData.applescript_** : only extracts relevant content from `MessagesDB.sqlite` and injects it in `NewDB.sqlite`
 
 ###Running the script
 
@@ -25,4 +25,4 @@ After executing the script, you'll end up with two .sqlite files in your directo
 ####Additonal info
 * Path to backup file: `/Users/username/Library/Application Support/MobileSync/Backup/<UDID>`
 * File containing text messages: `3d0d7e5fb2ce288813306e4d4636395e047a3d28`
-* Text messages are stored in the `messages`table. Required columns are _ROWID; text; handle_id; service; date; is_from_me_
+* Text messages are stored in the `messages` table. Required columns are _ROWID; text; handle_id; service; date; is_from_me_
