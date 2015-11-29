@@ -1,4 +1,4 @@
--- Save this scipt to /Users/{username}/Temp
+-- Save this script to /Users/{username}/Temp
 tell application "Finder" to get folder of (path to me) as Unicode text
 	set workingDir to POSIX path of result
 
