@@ -1,4 +1,4 @@
-###Collection of Applescript files
+### Collection of Applescript files
 
 This repository contains a couple of Applescript file, which you might find useful.
 
