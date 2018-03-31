@@ -1,8 +1,16 @@
+## Disclaimer
+
+On 30 March 2018, Google [announced](https://developers.googleblog.com/2018/03/transitioning-google-url-shortener.html) it will retire its goo.gl URL shortening service in favor of [Firebase Dynamic Links (FDL)](https://firebase.google.com/products/dynamic-links/). In a nutshell:
+
+* You won't be able to create new goo.gl short links after April 13th, 2018
+* Existing short links will continue to work, but you won't be able to access the console after March 30th, 2019
+
+
 ## Shorten URL's with Goo.gl
 
 A simple AppleScript requesting any type of URL as input and returns a shortened `goo.gl` URL. The short URL is directly copied to the clipboard, when completed the user receives an additional notification via the OSX notification center. 
 
-### Goo.gl
+#### Goo.gl
 
 If you are not familiar with the Google URL Shortener service, here is an example:  
 `https://developers.google.com/url-shortener/v1` is shortened to [goo.gl/ll5bAa](http://goo.gl/ll5bAa)  
@@ -13,7 +21,7 @@ For more information about the Google URL Shortener API, please read the API doc
 The section _"**Acquiring and using an API key**"_ will guide your through this process.
   
  
-### How it works
+#### How it works
 
 As the prompted dialog box requests: _"Enter a long URL"_ and click OK. In the background a shell script requests the **Goo.gl** service to return the shortened version.
 The shortened URL returned by the **Goo.gl** service and copied to the clipboard. The enduser is informed about this via a notification, using the OSX notification center. (see [screenshot](http://cl.ly/VBKl) of the notification)
@@ -28,7 +36,7 @@ The compiled version can be found in the [scpt file](https://github.com/nrollr/a
 
  
 
-### Additonal info
+#### Additonal info
 Script was tested on **OSX 10.9.2** and **AppleScript 2.3.1** 
  
 > More about the AppleScript `"display notification"` command can be found in: 
